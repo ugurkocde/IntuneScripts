@@ -84,7 +84,7 @@ $PostData = @{
     kind                    = "$TokenType"
     flock_id                = "$FlockID"
     memo                    = "$([System.Net.Dns]::GetHostName()) - $TokenName"
-    azure_id_cert_file_name = "finance_az_prod.pem"
+    azure_id_cert_file_name = "az_prod.pem" # Name this file as you like, but keep the extension.
 }
 Write-Host -ForegroundColor Green "[*] Hitting API to create token ..."
 
